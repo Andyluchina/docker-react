@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>This is a message from Master Andy</p>
+        <p>This is an update merged from feature branch</p>
         <a
           className="App-link"
           href="https://www.google.com"
