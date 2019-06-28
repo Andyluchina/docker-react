@@ -1,0 +1,9 @@
+sudo: requried
+services:
+  - docker
+
+before_install:
+  - docker build -t andyluchina/docker-react -f Dockfile.dev .
+
+script:
+  - docker run andyluchina/docker-react npm run test -- --coverage
