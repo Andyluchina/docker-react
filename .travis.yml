@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -f Dockfile.dev -t andyluchina/docker-react .
+  - docker build -t andyluchina/docker-react .
 
 script:
   - docker run andyluchina/docker-react npm run test -- --coverage
