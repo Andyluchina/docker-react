@@ -6,4 +6,4 @@ before_install:
   - docker build -t andyluchina/docker-react .
 
 script:
-  - docker run andyluchina/docker-react npm run test --exit --coverage
+  - docker run -e CI=true andyluchina/docker-react npm run test
